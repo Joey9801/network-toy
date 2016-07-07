@@ -1,7 +1,7 @@
 #ifndef ETHERNET_H_
 #define ETHERNET_H_
 
-#define ETHERTPYE_ARP  0x0806
+#define ETHERTYPE_ARP  0x0806
 #define ETHERTYPE IPV4 0x0800
 
 typedef uint8_t mac_addr[6];
