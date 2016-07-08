@@ -46,3 +46,19 @@ int print_iface(struct iface * interface) {
 
     return 0;
 }
+
+void print_bytes(uint8_t bytes[], size_t length) {
+
+    for(int i=0; i<length; i++) {
+        printf("%02X ", bytes[i]);
+
+        if((i+1) % 8 == 0) {
+            printf(" ");
+            if((i+1) % 16 == 0) {
+                printf("\n");
+            }
+        }
+    }
+
+    return;
+}
